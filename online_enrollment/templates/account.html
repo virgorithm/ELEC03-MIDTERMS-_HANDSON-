@@ -1,0 +1,21 @@
+
+
+<style> h1 {color: #9929EA;
+    text-align: center };</style>
+<h1>Account</h1>
+
+<ul>
+    {% for x in account %}
+         <li>
+            <hr>
+            <h2 style = "color: #AE75DA"></b>{{ x.student_name }} <br></h2>
+            <b>Student ID:</b> {{ x.student_ID }} <br>
+            <b>Email Address:</b> {{ x.email_address }} <br>  
+            <b>Password:</b> {{ x.password }} <br>  
+            <b>Year Level:</b> {{ x.year_level }} <br> 
+        
+        </li>
+
+    {% endfor %}
+    
+</ul>
